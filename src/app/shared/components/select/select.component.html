@@ -1,0 +1,7 @@
+<label class="fs-3 m-1 fw-bold">{{ title }}: </label>
+<select class="form-control bg-secondary-emphasi text-primary fs-5" (change)="selectedData($event)">
+  <option value="all" selected>All</option>
+  <option value="{{ item }}" *ngFor="let item of data">
+    {{ item }}
+  </option>
+</select>

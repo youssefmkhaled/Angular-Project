@@ -1,0 +1,25 @@
+.card {
+  transition: all 0.2s ease-in-out;
+}
+img {
+  height: 200px !important;
+}
+.card-title{
+  height: 80px !important;
+  font-size: 15px;
+  width: fit-content;
+}
+.card-text{
+  height: 90px !important;
+  overflow:hidden;
+  font-size: 15px
+}
+.card:hover {
+  transform: scale(1.05);
+  border-color: black;
+}
+.card span {
+  background-color:lightcoral;
+  padding: 5px;
+  border-radius: 10px;
+}

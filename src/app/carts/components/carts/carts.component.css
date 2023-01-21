@@ -1,0 +1,14 @@
+
+span{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  
+}
+span:hover{
+  background-color: #f00 !important;
+  color: #fff !important;
+}
+.ahmed{
+  padding: 0 !important;
+}

@@ -1,0 +1,27 @@
+<div class="card" >
+  <div routerLink="/details/{{ data.id }}">
+    <img src="{{ data.image }}" class="card-img-top p-2" alt="..." />
+    <div class="card-body">
+      <p class="card-title fw-bold">{{ data.title }}</p>
+      <p class="card-text">{{ data.description }}</p>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center card-body py-1">
+    <button class="btn btn-primary" *ngIf="addButn" (click)="addButn = false">
+      Add to Card
+    </button>
+    <div class="d-flex w-50" *ngIf="!addButn">
+      <input
+        type="number"
+        min="1"
+        class="form-control"
+        [(ngModel)]="amount"
+      />
+      <button class="btn btn-danger" (click)="add(); addButn = true">
+        Add
+      </button>
+    </div>
+    <span>{{ data.price }} LE</span>
+  </div>
+</div>
